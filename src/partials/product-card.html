@@ -1,0 +1,13 @@
+<div class="product-card visible" data-cat="{{cat}}">
+  <div class="product-img">
+    <img src="{{img}}" alt="{{name}} planter" />
+    <span class="product-badge">{{badge}}</span>
+  </div>
+  <div class="product-info">
+    <p class="product-cat">{{displayCat}}</p>
+    <p class="product-name">{{name}}</p>
+    <p class="product-price" style="font-size: 0.85rem; font-weight: 600; color: var(--ink); margin-bottom: 5px;">Price: ₹{{price}}/-</p>
+    <p class="product-desc">{{desc}}</p>
+    <a href="#" onclick="window.location.href='/checkout.html?product=' + encodeURIComponent('{{name}}') + '&img=' + encodeURIComponent('{{img}}') + '&price={{price}}'; return false;" class="btn-ghost" style="margin-top: 12px; width: 100%; justify-content: center; text-align: center; display: inline-flex;">BUY NOW</a>
+  </div>
+</div>

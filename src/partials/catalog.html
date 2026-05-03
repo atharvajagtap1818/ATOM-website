@@ -1,0 +1,20 @@
+<!-- CATALOG -->
+<section class="catalog" id="catalog">
+  <div class="catalog-top">
+    <p class="section-label reveal">The Collection</p>
+    <h2 class="section-title reveal d1">Featured <em>Picks</em></h2>
+    <p class="section-desc reveal d2">A hand-picked selection of our most loved pieces. Explore the full array of styles on our catalog page.</p>
+  </div>
+  <div class="products-grid" id="productsGrid">
+    {{#each catalogProducts.featured}}
+      {{> product-card this}}
+    {{/each}}
+  </div>
+
+  <div class="catalog-cta reveal">
+    <p class="section-label" style="justify-content:center; padding-left:0;">Curious to see more?</p>
+    <h3>Explore the Entire Store.</h3>
+    <p>We have dozens of unique designs sorted across anime, desi, aesthetic, and custom categories.</p>
+    <a href="/catalog-page.html" class="btn-primary" style="text-decoration:none;">View Full Catalog</a>
+  </div>
+</section>

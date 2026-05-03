@@ -1,0 +1,22 @@
+<!-- NAV -->
+<nav id="mainNav">
+  <div class="nav-logo" onclick="goTo('home')">
+    <svg viewBox="0 0 28 28" fill="none">
+      <circle cx="14" cy="14" r="2.8" fill="#2C2B28"/>
+      <ellipse cx="14" cy="14" rx="12" ry="5" stroke="#2C2B28" stroke-width="1.3" fill="none"/>
+      <ellipse cx="14" cy="14" rx="12" ry="5" stroke="#2C2B28" stroke-width="1.3" fill="none" transform="rotate(60 14 14)"/>
+      <ellipse cx="14" cy="14" rx="12" ry="5" stroke="#2C2B28" stroke-width="1.3" fill="none" transform="rotate(120 14 14)"/>
+    </svg>
+    <span class="nav-logo-text">A T O M</span>
+  </div>
+  <ul class="nav-links" id="navLinks">
+    <li><button class="nav-btn" onclick="goTo('about')">About</button></li>
+    <li><button class="nav-btn" onclick="window.location.href='/catalog-page.html'">Catalog</button></li>
+    <li><button class="nav-btn" onclick="goTo('process')">Our Process</button></li>
+    <li><button class="nav-btn" onclick="goTo('corporate')">Corporate Gifts</button></li>
+    <li><button class="nav-btn nav-cta" onclick="goTo('contact')">Enquire</button></li>
+  </ul>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>

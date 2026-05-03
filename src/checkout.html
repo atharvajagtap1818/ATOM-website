@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ATOM — Checkout</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+
+{{> nav }}
+
+<section class="checkout-section" style="padding-top: 160px; min-height: 100vh; background: var(--cream); display: flex; justify-content: center; align-items: flex-start;">
+  <div class="checkout-container reveal" style="background: var(--card-bg); padding: 48px; border-radius: 2px; width: 100%; max-width: 500px; border: 1px solid var(--border); box-shadow: 0 16px 40px rgba(26,25,22,0.06);">
+      <h2 class="section-title" style="font-size: 2.2rem; margin-bottom: 20px;">Complete Your <em>Order</em></h2>
+      
+      <div style="display: flex; gap: 24px; align-items: center; margin-bottom: 28px; padding-bottom: 24px; border-bottom: 1px solid var(--border);">
+          <div style="width: 80px; height: 100px; background: rgba(44,43,40,0.04); border-radius: 2px; overflow: hidden; flex-shrink: 0; border: 1px solid var(--border);">
+              <img id="displayImage" src="" alt="Product Image" style="width: 100%; height: 100%; object-fit: cover; display: none;">
+          </div>
+          <div>
+              <p style="font-family: var(--font-body); font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px;">Selected Item</p>
+              <p style="font-family: var(--font-serif); font-size: 1.4rem; color: var(--ink); font-weight: 500; margin-bottom: 6px; line-height: 1.2;"><span id="displayProduct">Loading...</span></p>
+              <p style="font-family: var(--font-body); font-size: 1rem;"><strong>Total Price: ₹<span id="displayPrice" style="color: var(--burgundy);">399</span>/-</strong></p>
+          </div>
+      </div>
+
+      <form id="addressForm">
+          <div class="form-group" style="margin-bottom: 16px;">
+              <label class="form-label" for="custName" style="color: var(--charcoal);">Full Name</label>
+              <input class="form-input" style="color: var(--ink); border-color: rgba(44,43,40,0.18); background: rgba(44,43,40,0.02);" type="text" id="custName" placeholder="Your Name" required>
+          </div>
+          <div class="form-group" style="margin-bottom: 24px;">
+              <label class="form-label" for="custAddress" style="color: var(--charcoal);">Delivery Address</label>
+              <textarea class="form-textarea" style="color: var(--ink); border-color: rgba(44,43,40,0.18); background: rgba(44,43,40,0.02); min-height: 70px;" id="custAddress" placeholder="Full Delivery Address (City & Pincode)" required></textarea>
+          </div>
+          <div style="display: flex; gap: 16px; margin-bottom: 32px;">
+              <div class="form-group" style="flex: 1;">
+                  <label class="form-label" for="orderQty" style="color: var(--charcoal);">Quantity</label>
+                  <input class="form-input" style="color: var(--ink); border-color: rgba(44,43,40,0.18); background: rgba(44,43,40,0.02);" type="number" id="orderQty" value="1" min="1" required>
+              </div>
+              <div class="form-group" style="flex: 2;">
+                  <label class="form-label" for="designType" style="color: var(--charcoal);">Design Type</label>
+                  <select class="form-input" style="color: var(--ink); border-color: rgba(44,43,40,0.18); background: rgba(44,43,40,0.02);" id="designType">
+                      <option value="Anime">Anime</option>
+                      <option value="Desi / Hindi">Desi / Hindi</option>
+                      <option value="Love & Aesthetic">Love & Aesthetic</option>
+                      <option value="Pop Culture">Pop Culture</option>
+                      <option value="Nature & Art">Nature & Art</option>
+                      <option value="Custom">Custom</option>
+                  </select>
+              </div>
+          </div>
+          
+          <button type="button" class="btn-primary" style="width: 100%; justify-content: center; padding: 16px;" onclick="sendOrder()">Confirm & Send Image via WhatsApp</button>
+      </form>
+  </div>
+</section>
+
+{{> footer }}
+
+<script>
+    // Get product name and image from URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const productName = urlParams.get('product') || "ATOM Planter";
+    document.getElementById('displayProduct').innerText = productName;
+
+    const productImg = urlParams.get('img');
+    if (productImg) {
+        const imgEl = document.getElementById('displayImage');
+        imgEl.src = productImg;
+        imgEl.style.display = 'block';
+    }
+
+    const productPrice = parseInt(urlParams.get('price')) || 399;
+    document.getElementById('displayPrice').innerText = productPrice;
+
+    function sendOrder() {
+        const myNumber = "919021207129"; 
+        const name = document.getElementById('custName').value.trim();
+        const address = document.getElementById('custAddress').value.trim();
+        const qty = parseInt(document.getElementById('orderQty').value) || 1;
+        const designType = document.getElementById('designType').value;
+
+        if(!name || !address) {
+            alert("Please fill in your name and address.");
+            return;
+        }
+
+        const total = productPrice * qty;
+        
+        // Full Image URL for WhatsApp
+        const fullImgUrl = productImg ? (window.location.origin + productImg) : "No image link provided";
+
+        const message = "*NEW ORDER: ANTI-GRAVITY*\n\n" +
+                        "*Product:* " + productName + "\n" +
+                        "*Design Type:* " + designType + "\n" +
+                        "*Quantity:* " + qty + "\n" +
+                        "*Total Amount:* ₹" + total + "/-\n\n" +
+                        "*Delivery Address:*\n" +
+                        name + "\n" + address + "\n\n" +
+                        "*Product Image:* " + fullImgUrl;
+
+        // Encoding for the URL
+        const encodedMessage = encodeURIComponent(message);
+        const whatsappURL = `https://wa.me/${myNumber}?text=${encodedMessage}`;
+        
+        window.open(whatsappURL, '_blank').focus();
+    }
+</script>
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+[
+  {
+    "id": "desi-bhukkad",
+    "cat": "desi",
+    "badge": "Desi",
+    "displayCat": "Desi / Hindi",
+    "name": "Bhukkad",
+    "desc": "Made in India. A person who can keep eating all day. Relatable? We knew it.",
+    "img": "/images/Bhukkad 1.png",
+    "featured": true,
+    "price": 399
+  },
+  {
+    "id": "desi-baddie",
+    "cat": "desi",
+    "badge": "Desi",
+    "displayCat": "Desi / Hindi",
+    "name": "बेddie",
+    "desc": "Devanagari meets streetwear. Deep blue mandala backdrop. Mischief, defined.",
+    "img": "/images/Baddie 1 .png",
+    "featured": false,
+    "price": 399
+  },
+  {
+    "id": "love-main-char",
+    "cat": "love",
+    "badge": "Aesthetic",
+    "displayCat": "Love & Aesthetic",
+    "name": "Main Character Energy",
+    "desc": "Because your desk deserves a lead role too. ♡",
+    "img": "/images/Main_Charachter_Energy.png",
+    "featured": true,
+    "price": 399
+  },
+  {
+    "id": "popcult-404",
+    "cat": "popcult",
+    "badge": "Pop Culture",
+    "displayCat": "Pop Culture",
+    "name": "Error 4:04 — Sleep Not Found",
+    "desc": "For the night owls and chronic overthinkers. Most relatable error ever.",
+    "img": "/images/Error 404 1.png",
+    "featured": true,
+    "price": 399
+  },
+  {
+    "id": "popcult-just-do-it",
+    "cat": "popcult",
+    "badge": "Pop Culture",
+    "displayCat": "Pop Culture",
+    "name": "Just Do It Planter",
+    "desc": "Push your boundaries and conquer your daily limits with confidence.",
+    "img": "/images/Just_Do_It_Planter.png",
+    "featured": false,
+    "price": 399
+  },
+  {
+    "id": "popcult-studying",
+    "cat": "desi",
+    "badge": "Desi",
+    "displayCat": "Desi / Hindi",
+    "name": "StuDying Planter",
+    "desc": "For everyone surviving the late nights and non-stop hustles.",
+    "img": "/images/StuDying Planter 1.png",
+    "featured": false,
+    "price": 399
+  },
+  {
+    "id": "popcult-everything-under-control",
+    "cat": "popcult",
+    "badge": "Pop Culture",
+    "displayCat": "Pop Culture",
+    "name": "Everything Under Control",
+    "desc": "When things are on fire but you assure yourself everything is completely fine.",
+    "img": "/images/everything Under Control Planter MockUp.png",
+    "featured": true,
+    "price": 399
+  },
+  {
+    "id": "popcult-insane-bitch",
+    "cat": "popcult",
+    "badge": "Pop Culture",
+    "displayCat": "Pop Culture",
+    "name": "Insane Bitch",
+    "desc": "Unapologetically bold and aggressively authentic.",
+    "img": "/images/Insane Bitch 1.png",
+    "featured": false,
+    "price": 399
+  },
+  {
+    "id": "love-sweet-dreams",
+    "cat": "love",
+    "badge": "Aesthetic",
+    "displayCat": "Love & Aesthetic",
+    "name": "Sweet Dreams",
+    "desc": "A reminder to wind down, find your peace, and rest well.",
+    "img": "/images/Sweet Dreams Planter.png",
+    "featured": false,
+    "price": 399
+  },
+  {
+    "id": "love-worth-it",
+    "cat": "love",
+    "badge": "Aesthetic",
+    "displayCat": "Love & Aesthetic",
+    "name": "Worth It All",
+    "desc": "Your struggles and your grind are definitely worth it.",
+    "img": "/images/Worth it all 1.png",
+    "featured": false,
+    "price": 399
+  },
+  {
+    "id": "love-one-in-melon",
+    "cat": "love",
+    "badge": "Aesthetic",
+    "displayCat": "Love & Aesthetic",
+    "name": "One in a Melon",
+    "desc": "A sweet appreciation for those rare and unique souls.",
+    "img": "/images/One in A Melon 1.png",
+    "featured": true,
+    "price": 399
+  },
+  {
+    "id": "nature-sunshine",
+    "cat": "nature",
+    "badge": "Nature & Art",
+    "displayCat": "Nature & Art",
+    "name": "You Are My Sunshine",
+    "desc": "Brighten up the darkest desks with a touch of warmth.",
+    "img": "/images/You are my sunshine 1.png",
+    "featured": false,
+    "price": 399
+  },
+  {
+    "id": "nature-day-night",
+    "cat": "nature",
+    "badge": "Nature & Art",
+    "displayCat": "Nature & Art",
+    "name": "Day and Night",
+    "desc": "Balance in everything. A dual representation of your continuous flow.",
+    "img": "/images/day and night 1.png",
+    "featured": false,
+    "price": 399
+  },
+  {
+    "id": "anime-gojo",
+    "cat": "anime",
+    "badge": "Anime",
+    "displayCat": "Anime",
+    "name": "Gojo Satoru Planter",
+    "desc": "Limitless style for your desk. Keep your plants safe from curses.",
+    "img": "/images/anime_1.jpg",
+    "featured": true,
+    "price": 399
+  },
+  {
+    "id": "anime-luffy",
+    "cat": "anime",
+    "badge": "Anime",
+    "displayCat": "Anime",
+    "name": "Monkey D. Luffy Planter",
+    "desc": "The ultimate gear for your plants. Become the king of the garden!",
+    "img": "/images/anime_2.jpg",
+    "featured": true,
+    "price": 399
+  },
+  {
+    "id": "anime-naruto",
+    "cat": "anime",
+    "badge": "Anime",
+    "displayCat": "Anime",
+    "name": "Naruto Uzumaki Planter",
+    "desc": "Believe it! A planter that contains the spirit of a true ninja.",
+    "img": "/images/anime_3.jpg",
+    "featured": true,
+    "price": 399
+  },
+  {
+    "id": "custom-design",
+    "cat": "custom",
+    "badge": "Custom",
+    "displayCat": "Custom Design",
+    "name": "Custom Designed Planter",
+    "desc": "Have your own idea? Upload or send us your image on WhatsApp and we will make it happen!",
+    "img": "/images/custom-planter.jpg",
+    "featured": false,
+    "price": 499
+  }
+]

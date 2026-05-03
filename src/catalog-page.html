@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ATOM — Full Catalog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+
+{{> nav }}
+
+<!-- FULL CATALOG Section -->
+<section class="catalog" id="catalog" style="padding-top: 140px; min-height: 100vh;">
+  <div class="catalog-top">
+    <p class="section-label reveal">The Complete Collection</p>
+    <h2 class="section-title reveal d1">Browse Our <em>Full Catalog</em></h2>
+    <div class="category-tabs reveal d2">
+      <button class="tab-btn active" data-filter="all">All</button>
+      <button class="tab-btn" data-filter="anime">Anime</button>
+      <button class="tab-btn" data-filter="desi">Desi / Hindi</button>
+      <button class="tab-btn" data-filter="love">Love &amp; Aesthetic</button>
+      <button class="tab-btn" data-filter="popcult">Pop Culture</button>
+      <button class="tab-btn" data-filter="nature">Nature &amp; Art</button>
+      <button class="tab-btn" data-filter="custom">Custom</button>
+    </div>
+  </div>
+  <div class="products-grid" id="productsGrid">
+    {{#each catalogProducts.full}}
+      {{> product-card this}}
+    {{/each}}
+  </div>
+</section>
+
+{{> footer }}
+
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>

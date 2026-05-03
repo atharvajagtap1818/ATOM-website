@@ -1,0 +1,35 @@
+# Dependencies & Build Output
+node_modules/
+dist/
+
+# Logs & Debug
+build.log
+err.txt
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python Scripts
+*.py
+
+# Deprecated Root Files (Vite uses src/index.html now)
+index.html
+test.js
+
+# Raw Marketing Materials & Images (Ignored as requested)
+A T O M_compressed.pdf
+ATOM BRAND KNOWLEDGE BOOK.pdf
+Site Files/
+insta post*.png
+corporate gift.png
+IMG-*.jpeg
+*.jpg.jpeg
+
+# Environment Files
+.env
+.env.local
+
+# OS Files
+.DS_Store
+Thumbs.db
+index_final.html

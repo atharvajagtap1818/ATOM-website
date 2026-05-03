@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "atom-524e1",
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
