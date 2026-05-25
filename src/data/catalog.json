@@ -8,7 +8,7 @@
     "desc": "Made in India. A person who can keep eating all day. Relatable? We knew it.",
     "img": "/images/Bhukkad 1.png",
     "featured": true,
-    "price": 399
+    "price": 749
   },
   {
     "id": "desi-baddie",
@@ -19,7 +19,7 @@
     "desc": "Devanagari meets streetwear. Deep blue mandala backdrop. Mischief, defined.",
     "img": "/images/Baddie 1 .png",
     "featured": false,
-    "price": 399
+    "price": 749
   },
   {
     "id": "love-main-char",
@@ -30,7 +30,7 @@
     "desc": "Because your desk deserves a lead role too. ♡",
     "img": "/images/Main_Charachter_Energy.png",
     "featured": true,
-    "price": 399
+    "price": 749
   },
   {
     "id": "popcult-404",
@@ -41,7 +41,7 @@
     "desc": "For the night owls and chronic overthinkers. Most relatable error ever.",
     "img": "/images/Error 404 1.png",
     "featured": true,
-    "price": 399
+    "price": 749
   },
   {
     "id": "popcult-just-do-it",
@@ -52,7 +52,7 @@
     "desc": "Push your boundaries and conquer your daily limits with confidence.",
     "img": "/images/Just_Do_It_Planter.png",
     "featured": false,
-    "price": 399
+    "price": 749
   },
   {
     "id": "popcult-studying",
@@ -63,7 +63,7 @@
     "desc": "For everyone surviving the late nights and non-stop hustles.",
     "img": "/images/StuDying Planter 1.png",
     "featured": false,
-    "price": 399
+    "price": 749
   },
   {
     "id": "popcult-everything-under-control",
@@ -74,7 +74,7 @@
     "desc": "When things are on fire but you assure yourself everything is completely fine.",
     "img": "/images/everything Under Control Planter MockUp.png",
     "featured": true,
-    "price": 399
+    "price": 749
   },
   {
     "id": "popcult-insane-bitch",
@@ -85,7 +85,7 @@
     "desc": "Unapologetically bold and aggressively authentic.",
     "img": "/images/Insane Bitch 1.png",
     "featured": false,
-    "price": 399
+    "price": 749
   },
   {
     "id": "love-sweet-dreams",
@@ -96,7 +96,7 @@
     "desc": "A reminder to wind down, find your peace, and rest well.",
     "img": "/images/Sweet Dreams Planter.png",
     "featured": false,
-    "price": 399
+    "price": 749
   },
   {
     "id": "love-worth-it",
@@ -107,7 +107,7 @@
     "desc": "Your struggles and your grind are definitely worth it.",
     "img": "/images/Worth it all 1.png",
     "featured": false,
-    "price": 399
+    "price": 749
   },
   {
     "id": "love-one-in-melon",
@@ -118,7 +118,7 @@
     "desc": "A sweet appreciation for those rare and unique souls.",
     "img": "/images/One in A Melon 1.png",
     "featured": true,
-    "price": 399
+    "price": 749
   },
   {
     "id": "nature-sunshine",
@@ -129,7 +129,7 @@
     "desc": "Brighten up the darkest desks with a touch of warmth.",
     "img": "/images/You are my sunshine 1.png",
     "featured": false,
-    "price": 399
+    "price": 749
   },
   {
     "id": "nature-day-night",
@@ -140,7 +140,7 @@
     "desc": "Balance in everything. A dual representation of your continuous flow.",
     "img": "/images/day and night 1.png",
     "featured": false,
-    "price": 399
+    "price": 749
   },
   {
     "id": "anime-gojo",
@@ -151,7 +151,7 @@
     "desc": "Limitless style for your desk. Keep your plants safe from curses.",
     "img": "/images/anime_1.jpg",
     "featured": true,
-    "price": 399
+    "price": 749
   },
   {
     "id": "anime-luffy",
@@ -162,7 +162,7 @@
     "desc": "The ultimate gear for your plants. Become the king of the garden!",
     "img": "/images/anime_2.jpg",
     "featured": true,
-    "price": 399
+    "price": 749
   },
   {
     "id": "anime-naruto",
@@ -173,7 +173,7 @@
     "desc": "Believe it! A planter that contains the spirit of a true ninja.",
     "img": "/images/anime_3.jpg",
     "featured": true,
-    "price": 399
+    "price": 749
   },
   {
     "id": "custom-design",
@@ -184,6 +184,6 @@
     "desc": "Have your own idea? Upload or send us your image on WhatsApp and we will make it happen!",
     "img": "/images/custom-planter.jpg",
     "featured": false,
-    "price": 499
+    "price": 749
   }
 ]

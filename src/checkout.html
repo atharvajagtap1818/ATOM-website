@@ -24,7 +24,7 @@
           <div>
               <p style="font-family: var(--font-body); font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px;">Selected Item</p>
               <p style="font-family: var(--font-serif); font-size: 1.4rem; color: var(--ink); font-weight: 500; margin-bottom: 6px; line-height: 1.2;"><span id="displayProduct">Loading...</span></p>
-              <p style="font-family: var(--font-body); font-size: 1rem;"><strong>Total Price: ₹<span id="displayPrice" style="color: var(--burgundy);">399</span>/-</strong></p>
+              <p style="font-family: var(--font-body); font-size: 1rem;"><strong>Total Price: ₹<span id="displayPrice" style="color: var(--burgundy);">749</span>/-</strong></p>
           </div>
       </div>
 
@@ -75,7 +75,7 @@
         imgEl.style.display = 'block';
     }
 
-    const productPrice = parseInt(urlParams.get('price')) || 399;
+    const productPrice = parseInt(urlParams.get('price')) || 749;
     document.getElementById('displayPrice').innerText = productPrice;
 
     function sendOrder() {
