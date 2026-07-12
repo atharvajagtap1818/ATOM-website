@@ -1,7 +1,9 @@
 # Dependencies & Build Output
 node_modules/
 dist/
-
+New Planters/
+new website imgs/
+Updated Catlog (Atom Signature Planter)/
 # Logs & Debug
 build.log
 err.txt
@@ -13,7 +15,7 @@ yarn-error.log*
 *.py
 
 # Deprecated Root Files (Vite uses src/index.html now)
-index.html
+/index.html
 test.js
 
 # Raw Marketing Materials & Images (Ignored as requested)
@@ -24,7 +26,7 @@ insta post*.png
 corporate gift.png
 IMG-*.jpeg
 *.jpg.jpeg
-
+*.png
 # Environment Files
 .env
 .env.local

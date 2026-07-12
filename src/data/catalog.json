@@ -6,9 +6,20 @@
     "displayCat": "Desi / Hindi",
     "name": "Bhukkad",
     "desc": "Made in India. A person who can keep eating all day. Relatable? We knew it.",
-    "img": "/images/Bhukkad 1.png",
+    "img": "/images/bhukkad.webp",
     "featured": true,
-    "price": 749
+    "mrp": 749,
+    "price": 399,
+    "discountPercent": 47,
+    "collection": "Signature Concrete Planters",
+    "specs": {
+      "material": "Fiber-reinforced premium concrete",
+      "dimensions": "9.5 cm (Diameter) x 9.5 cm (Height)",
+      "weight": "650g",
+      "drainage": "Yes, pre-drilled drainage hole",
+      "care": "Wipe with damp cloth. Do not scrub design.",
+      "finish": "Silk-matte protective sealer & anti-scratch felt bottom"
+    }
   },
   {
     "id": "desi-baddie",
@@ -17,9 +28,20 @@
     "displayCat": "Desi / Hindi",
     "name": "बेddie",
     "desc": "Devanagari meets streetwear. Deep blue mandala backdrop. Mischief, defined.",
-    "img": "/images/Baddie 1 .png",
+    "img": "/images/baddie.webp",
     "featured": false,
-    "price": 749
+    "mrp": 749,
+    "price": 399,
+    "discountPercent": 47,
+    "collection": "Signature Concrete Planters",
+    "specs": {
+      "material": "Fiber-reinforced premium concrete",
+      "dimensions": "9.5 cm (Diameter) x 9.5 cm (Height)",
+      "weight": "650g",
+      "drainage": "Yes, pre-drilled drainage hole",
+      "care": "Wipe with damp cloth. Do not scrub design.",
+      "finish": "Silk-matte protective sealer & anti-scratch felt bottom"
+    }
   },
   {
     "id": "love-main-char",
@@ -28,9 +50,20 @@
     "displayCat": "Love & Aesthetic",
     "name": "Main Character Energy",
     "desc": "Because your desk deserves a lead role too. ♡",
-    "img": "/images/Main_Charachter_Energy.png",
+    "img": "/images/main_character_energy.webp",
     "featured": true,
-    "price": 749
+    "mrp": 749,
+    "price": 399,
+    "discountPercent": 47,
+    "collection": "Signature Concrete Planters",
+    "specs": {
+      "material": "Fiber-reinforced premium concrete",
+      "dimensions": "9.5 cm (Diameter) x 9.5 cm (Height)",
+      "weight": "650g",
+      "drainage": "Yes, pre-drilled drainage hole",
+      "care": "Wipe with damp cloth. Do not scrub design.",
+      "finish": "Silk-matte protective sealer & anti-scratch felt bottom"
+    }
   },
   {
     "id": "popcult-404",
@@ -39,20 +72,20 @@
     "displayCat": "Pop Culture",
     "name": "Error 4:04 — Sleep Not Found",
     "desc": "For the night owls and chronic overthinkers. Most relatable error ever.",
-    "img": "/images/Error 404 1.png",
+    "img": "/images/error_404_sleep.webp",
     "featured": true,
-    "price": 749
-  },
-  {
-    "id": "popcult-just-do-it",
-    "cat": "popcult",
-    "badge": "Pop Culture",
-    "displayCat": "Pop Culture",
-    "name": "Just Do It Planter",
-    "desc": "Push your boundaries and conquer your daily limits with confidence.",
-    "img": "/images/Just_Do_It_Planter.png",
-    "featured": false,
-    "price": 749
+    "mrp": 749,
+    "price": 399,
+    "discountPercent": 47,
+    "collection": "Signature Concrete Planters",
+    "specs": {
+      "material": "Fiber-reinforced premium concrete",
+      "dimensions": "9.5 cm (Diameter) x 9.5 cm (Height)",
+      "weight": "650g",
+      "drainage": "Yes, pre-drilled drainage hole",
+      "care": "Wipe with damp cloth. Do not scrub design.",
+      "finish": "Silk-matte protective sealer & anti-scratch felt bottom"
+    }
   },
   {
     "id": "popcult-studying",
@@ -61,64 +94,20 @@
     "displayCat": "Desi / Hindi",
     "name": "StuDying Planter",
     "desc": "For everyone surviving the late nights and non-stop hustles.",
-    "img": "/images/StuDying Planter 1.png",
+    "img": "/images/padhaku.webp",
     "featured": false,
-    "price": 749
-  },
-  {
-    "id": "popcult-everything-under-control",
-    "cat": "popcult",
-    "badge": "Pop Culture",
-    "displayCat": "Pop Culture",
-    "name": "Everything Under Control",
-    "desc": "When things are on fire but you assure yourself everything is completely fine.",
-    "img": "/images/everything Under Control Planter MockUp.png",
-    "featured": true,
-    "price": 749
-  },
-  {
-    "id": "popcult-insane-bitch",
-    "cat": "popcult",
-    "badge": "Pop Culture",
-    "displayCat": "Pop Culture",
-    "name": "Insane Bitch",
-    "desc": "Unapologetically bold and aggressively authentic.",
-    "img": "/images/Insane Bitch 1.png",
-    "featured": false,
-    "price": 749
-  },
-  {
-    "id": "love-sweet-dreams",
-    "cat": "love",
-    "badge": "Aesthetic",
-    "displayCat": "Love & Aesthetic",
-    "name": "Sweet Dreams",
-    "desc": "A reminder to wind down, find your peace, and rest well.",
-    "img": "/images/Sweet Dreams Planter.png",
-    "featured": false,
-    "price": 749
-  },
-  {
-    "id": "love-worth-it",
-    "cat": "love",
-    "badge": "Aesthetic",
-    "displayCat": "Love & Aesthetic",
-    "name": "Worth It All",
-    "desc": "Your struggles and your grind are definitely worth it.",
-    "img": "/images/Worth it all 1.png",
-    "featured": false,
-    "price": 749
-  },
-  {
-    "id": "love-one-in-melon",
-    "cat": "love",
-    "badge": "Aesthetic",
-    "displayCat": "Love & Aesthetic",
-    "name": "One in a Melon",
-    "desc": "A sweet appreciation for those rare and unique souls.",
-    "img": "/images/One in A Melon 1.png",
-    "featured": true,
-    "price": 749
+    "mrp": 749,
+    "price": 399,
+    "discountPercent": 47,
+    "collection": "Signature Concrete Planters",
+    "specs": {
+      "material": "Fiber-reinforced premium concrete",
+      "dimensions": "9.5 cm (Diameter) x 9.5 cm (Height)",
+      "weight": "650g",
+      "drainage": "Yes, pre-drilled drainage hole",
+      "care": "Wipe with damp cloth. Do not scrub design.",
+      "finish": "Silk-matte protective sealer & anti-scratch felt bottom"
+    }
   },
   {
     "id": "nature-sunshine",
@@ -127,20 +116,20 @@
     "displayCat": "Nature & Art",
     "name": "You Are My Sunshine",
     "desc": "Brighten up the darkest desks with a touch of warmth.",
-    "img": "/images/You are my sunshine 1.png",
+    "img": "/images/sunflower.webp",
     "featured": false,
-    "price": 749
-  },
-  {
-    "id": "nature-day-night",
-    "cat": "nature",
-    "badge": "Nature & Art",
-    "displayCat": "Nature & Art",
-    "name": "Day and Night",
-    "desc": "Balance in everything. A dual representation of your continuous flow.",
-    "img": "/images/day and night 1.png",
-    "featured": false,
-    "price": 749
+    "mrp": 749,
+    "price": 399,
+    "discountPercent": 47,
+    "collection": "Signature Concrete Planters",
+    "specs": {
+      "material": "Fiber-reinforced premium concrete",
+      "dimensions": "9.5 cm (Diameter) x 9.5 cm (Height)",
+      "weight": "650g",
+      "drainage": "Yes, pre-drilled drainage hole",
+      "care": "Wipe with damp cloth. Do not scrub design.",
+      "finish": "Silk-matte protective sealer & anti-scratch felt bottom"
+    }
   },
   {
     "id": "anime-gojo",
@@ -149,9 +138,20 @@
     "displayCat": "Anime",
     "name": "Gojo Satoru Planter",
     "desc": "Limitless style for your desk. Keep your plants safe from curses.",
-    "img": "/images/anime_1.jpg",
+    "img": "/images/gojo.webp",
     "featured": true,
-    "price": 749
+    "mrp": 749,
+    "price": 399,
+    "discountPercent": 47,
+    "collection": "Signature Concrete Planters",
+    "specs": {
+      "material": "Fiber-reinforced premium concrete",
+      "dimensions": "9.5 cm (Diameter) x 9.5 cm (Height)",
+      "weight": "650g",
+      "drainage": "Yes, pre-drilled drainage hole",
+      "care": "Wipe with damp cloth. Do not scrub design.",
+      "finish": "Silk-matte protective sealer & anti-scratch felt bottom"
+    }
   },
   {
     "id": "anime-luffy",
@@ -160,9 +160,20 @@
     "displayCat": "Anime",
     "name": "Monkey D. Luffy Planter",
     "desc": "The ultimate gear for your plants. Become the king of the garden!",
-    "img": "/images/anime_2.jpg",
+    "img": "/images/anime.webp",
     "featured": true,
-    "price": 749
+    "mrp": 749,
+    "price": 399,
+    "discountPercent": 47,
+    "collection": "Signature Concrete Planters",
+    "specs": {
+      "material": "Fiber-reinforced premium concrete",
+      "dimensions": "9.5 cm (Diameter) x 9.5 cm (Height)",
+      "weight": "650g",
+      "drainage": "Yes, pre-drilled drainage hole",
+      "care": "Wipe with damp cloth. Do not scrub design.",
+      "finish": "Silk-matte protective sealer & anti-scratch felt bottom"
+    }
   },
   {
     "id": "anime-naruto",
@@ -171,19 +182,459 @@
     "displayCat": "Anime",
     "name": "Naruto Uzumaki Planter",
     "desc": "Believe it! A planter that contains the spirit of a true ninja.",
-    "img": "/images/anime_3.jpg",
+    "img": "/images/naruto.webp",
     "featured": true,
-    "price": 749
+    "mrp": 749,
+    "price": 399,
+    "discountPercent": 47,
+    "collection": "Signature Concrete Planters",
+    "specs": {
+      "material": "Fiber-reinforced premium concrete",
+      "dimensions": "9.5 cm (Diameter) x 9.5 cm (Height)",
+      "weight": "650g",
+      "drainage": "Yes, pre-drilled drainage hole",
+      "care": "Wipe with damp cloth. Do not scrub design.",
+      "finish": "Silk-matte protective sealer & anti-scratch felt bottom"
+    }
   },
   {
-    "id": "custom-design",
-    "cat": "custom",
-    "badge": "Custom",
-    "displayCat": "Custom Design",
-    "name": "Custom Designed Planter",
-    "desc": "Have your own idea? Upload or send us your image on WhatsApp and we will make it happen!",
-    "img": "/images/custom-planter.jpg",
+    "id": "love-xo",
+    "cat": "love",
+    "badge": "Aesthetic",
+    "displayCat": "Love & Aesthetic",
+    "name": "XO Planter",
+    "desc": "Hugs, kisses, and calm spaces. The perfect companion for your bedroom desk.",
+    "img": "/images/xo.webp",
+    "featured": true,
+    "mrp": 749,
+    "price": 399,
+    "discountPercent": 47,
+    "collection": "Signature Concrete Planters",
+    "specs": {
+      "material": "Fiber-reinforced premium concrete",
+      "dimensions": "9.5 cm (Diameter) x 9.5 cm (Height)",
+      "weight": "650g",
+      "drainage": "Yes, pre-drilled drainage hole",
+      "care": "Wipe with damp cloth. Do not scrub design.",
+      "finish": "Silk-matte protective sealer & anti-scratch felt bottom"
+    }
+  },
+  {
+    "id": "desi-bichari",
+    "cat": "desi",
+    "badge": "Desi",
+    "displayCat": "Desi / Hindi",
+    "name": "Bichari Planter",
+    "desc": "For the days when you are just feeling a little helpless but still cute.",
+    "img": "/images/bichari.webp",
     "featured": false,
-    "price": 749
+    "mrp": 749,
+    "price": 399,
+    "discountPercent": 47,
+    "collection": "Signature Concrete Planters",
+    "specs": {
+      "material": "Fiber-reinforced premium concrete",
+      "dimensions": "9.5 cm (Diameter) x 9.5 cm (Height)",
+      "weight": "650g",
+      "drainage": "Yes, pre-drilled drainage hole",
+      "care": "Wipe with damp cloth. Do not scrub design.",
+      "finish": "Silk-matte protective sealer & anti-scratch felt bottom"
+    }
+  },
+  {
+    "id": "love-chill",
+    "cat": "love",
+    "badge": "Aesthetic",
+    "displayCat": "Love & Aesthetic",
+    "name": "Chill Planter",
+    "desc": "A gentle reminder to sit back, breathe, and just chill.",
+    "img": "/images/chill.webp",
+    "featured": false,
+    "mrp": 749,
+    "price": 399,
+    "discountPercent": 47,
+    "collection": "Signature Concrete Planters",
+    "specs": {
+      "material": "Fiber-reinforced premium concrete",
+      "dimensions": "9.5 cm (Diameter) x 9.5 cm (Height)",
+      "weight": "650g",
+      "drainage": "Yes, pre-drilled drainage hole",
+      "care": "Wipe with damp cloth. Do not scrub design.",
+      "finish": "Silk-matte protective sealer & anti-scratch felt bottom"
+    }
+  },
+  {
+    "id": "popcult-fast-car",
+    "cat": "popcult",
+    "badge": "Pop Culture",
+    "displayCat": "Pop Culture",
+    "name": "Fast Car Planter",
+    "desc": "For those who live life in the fast lane and love speed.",
+    "img": "/images/fast_car.webp",
+    "featured": false,
+    "mrp": 749,
+    "price": 399,
+    "discountPercent": 47,
+    "collection": "Signature Concrete Planters",
+    "specs": {
+      "material": "Fiber-reinforced premium concrete",
+      "dimensions": "9.5 cm (Diameter) x 9.5 cm (Height)",
+      "weight": "650g",
+      "drainage": "Yes, pre-drilled drainage hole",
+      "care": "Wipe with damp cloth. Do not scrub design.",
+      "finish": "Silk-matte protective sealer & anti-scratch felt bottom"
+    }
+  },
+  {
+    "id": "popcult-fast-like",
+    "cat": "popcult",
+    "badge": "Pop Culture",
+    "displayCat": "Pop Culture",
+    "name": "Fast Like Planter",
+    "desc": "Sleek design celebrating fast pace and high ambition.",
+    "img": "/images/fast_like.webp",
+    "featured": false,
+    "mrp": 749,
+    "price": 399,
+    "discountPercent": 47,
+    "collection": "Signature Concrete Planters",
+    "specs": {
+      "material": "Fiber-reinforced premium concrete",
+      "dimensions": "9.5 cm (Diameter) x 9.5 cm (Height)",
+      "weight": "650g",
+      "drainage": "Yes, pre-drilled drainage hole",
+      "care": "Wipe with damp cloth. Do not scrub design.",
+      "finish": "Silk-matte protective sealer & anti-scratch felt bottom"
+    }
+  },
+  {
+    "id": "nature-house",
+    "cat": "nature",
+    "badge": "Nature & Art",
+    "displayCat": "Nature & Art",
+    "name": "House Planter",
+    "desc": "Cozy, rustic cottage vibes translated onto concrete.",
+    "img": "/images/house.webp",
+    "featured": false,
+    "mrp": 749,
+    "price": 399,
+    "discountPercent": 47,
+    "collection": "Signature Concrete Planters",
+    "specs": {
+      "material": "Fiber-reinforced premium concrete",
+      "dimensions": "9.5 cm (Diameter) x 9.5 cm (Height)",
+      "weight": "650g",
+      "drainage": "Yes, pre-drilled drainage hole",
+      "care": "Wipe with damp cloth. Do not scrub design.",
+      "finish": "Silk-matte protective sealer & anti-scratch felt bottom"
+    }
+  },
+  {
+    "id": "love-wanna-be-yours",
+    "cat": "love",
+    "badge": "Aesthetic",
+    "displayCat": "Love & Aesthetic",
+    "name": "I Wanna Be Yours",
+    "desc": "Inspired by classic romantic melodies to soothe your space.",
+    "img": "/images/i_wanna_be_yours.webp",
+    "featured": false,
+    "mrp": 749,
+    "price": 399,
+    "discountPercent": 47,
+    "collection": "Signature Concrete Planters",
+    "specs": {
+      "material": "Fiber-reinforced premium concrete",
+      "dimensions": "9.5 cm (Diameter) x 9.5 cm (Height)",
+      "weight": "650g",
+      "drainage": "Yes, pre-drilled drainage hole",
+      "care": "Wipe with damp cloth. Do not scrub design.",
+      "finish": "Silk-matte protective sealer & anti-scratch felt bottom"
+    }
+  },
+  {
+    "id": "desi-kala-kar",
+    "cat": "desi",
+    "badge": "Desi",
+    "displayCat": "Desi / Hindi",
+    "name": "Kala Kar Planter",
+    "desc": "Because there is an artist hidden in every single one of us.",
+    "img": "/images/kala_kar.webp",
+    "featured": false,
+    "mrp": 749,
+    "price": 399,
+    "discountPercent": 47,
+    "collection": "Signature Concrete Planters",
+    "specs": {
+      "material": "Fiber-reinforced premium concrete",
+      "dimensions": "9.5 cm (Diameter) x 9.5 cm (Height)",
+      "weight": "650g",
+      "drainage": "Yes, pre-drilled drainage hole",
+      "care": "Wipe with damp cloth. Do not scrub design.",
+      "finish": "Silk-matte protective sealer & anti-scratch felt bottom"
+    }
+  },
+  {
+    "id": "love-love",
+    "cat": "love",
+    "badge": "Aesthetic",
+    "displayCat": "Love & Aesthetic",
+    "name": "Love Planter",
+    "desc": "A simple, timeless symbol of affection to brighten your desk.",
+    "img": "/images/love.webp",
+    "featured": false,
+    "mrp": 749,
+    "price": 399,
+    "discountPercent": 47,
+    "collection": "Signature Concrete Planters",
+    "specs": {
+      "material": "Fiber-reinforced premium concrete",
+      "dimensions": "9.5 cm (Diameter) x 9.5 cm (Height)",
+      "weight": "650g",
+      "drainage": "Yes, pre-drilled drainage hole",
+      "care": "Wipe with damp cloth. Do not scrub design.",
+      "finish": "Silk-matte protective sealer & anti-scratch felt bottom"
+    }
+  },
+  {
+    "id": "desi-favourite",
+    "cat": "desi",
+    "badge": "Desi",
+    "displayCat": "Desi / Hindi",
+    "name": "Main Apni Favourite Hoon",
+    "desc": "Own your confidence with this iconic Bollywood reminder.",
+    "img": "/images/main_apni_favourite_hoon.webp",
+    "featured": false,
+    "mrp": 749,
+    "price": 399,
+    "discountPercent": 47,
+    "collection": "Signature Concrete Planters",
+    "specs": {
+      "material": "Fiber-reinforced premium concrete",
+      "dimensions": "9.5 cm (Diameter) x 9.5 cm (Height)",
+      "weight": "650g",
+      "drainage": "Yes, pre-drilled drainage hole",
+      "care": "Wipe with damp cloth. Do not scrub design.",
+      "finish": "Silk-matte protective sealer & anti-scratch felt bottom"
+    }
+  },
+  {
+    "id": "popcult-mens-opinions",
+    "cat": "popcult",
+    "badge": "Pop Culture",
+    "displayCat": "Pop Culture",
+    "name": "Men's Opinions Planter",
+    "desc": "A humorous, lighthearted design for your favorite desk.",
+    "img": "/images/mens_opinions.webp",
+    "featured": false,
+    "mrp": 749,
+    "price": 399,
+    "discountPercent": 47,
+    "collection": "Signature Concrete Planters",
+    "specs": {
+      "material": "Fiber-reinforced premium concrete",
+      "dimensions": "9.5 cm (Diameter) x 9.5 cm (Height)",
+      "weight": "650g",
+      "drainage": "Yes, pre-drilled drainage hole",
+      "care": "Wipe with damp cloth. Do not scrub design.",
+      "finish": "Silk-matte protective sealer & anti-scratch felt bottom"
+    }
+  },
+  {
+    "id": "love-no-bad-vibes",
+    "cat": "love",
+    "badge": "Aesthetic",
+    "displayCat": "Love & Aesthetic",
+    "name": "No Bad Vibes",
+    "desc": "Keep the energy positive and the plants green.",
+    "img": "/images/no_bad_vibes.webp",
+    "featured": false,
+    "mrp": 749,
+    "price": 399,
+    "discountPercent": 47,
+    "collection": "Signature Concrete Planters",
+    "specs": {
+      "material": "Fiber-reinforced premium concrete",
+      "dimensions": "9.5 cm (Diameter) x 9.5 cm (Height)",
+      "weight": "650g",
+      "drainage": "Yes, pre-drilled drainage hole",
+      "care": "Wipe with damp cloth. Do not scrub design.",
+      "finish": "Silk-matte protective sealer & anti-scratch felt bottom"
+    }
+  },
+  {
+    "id": "nature-street-light",
+    "cat": "nature",
+    "badge": "Nature & Art",
+    "displayCat": "Nature & Art",
+    "name": "Street Light Planter",
+    "desc": "Urban twilight aesthetic captured beautifully in concrete.",
+    "img": "/images/street_light.webp",
+    "featured": false,
+    "mrp": 749,
+    "price": 399,
+    "discountPercent": 47,
+    "collection": "Signature Concrete Planters",
+    "specs": {
+      "material": "Fiber-reinforced premium concrete",
+      "dimensions": "9.5 cm (Diameter) x 9.5 cm (Height)",
+      "weight": "650g",
+      "drainage": "Yes, pre-drilled drainage hole",
+      "care": "Wipe with damp cloth. Do not scrub design.",
+      "finish": "Silk-matte protective sealer & anti-scratch felt bottom"
+    }
+  },
+  {
+    "id": "nature-sunflowers-2",
+    "cat": "nature",
+    "badge": "Nature & Art",
+    "displayCat": "Nature & Art",
+    "name": "Sunflowers Duo",
+    "desc": "Double the sunshine, double the calm for your workspace.",
+    "img": "/images/sunflowers_2.webp",
+    "featured": false,
+    "mrp": 749,
+    "price": 399,
+    "discountPercent": 47,
+    "collection": "Signature Concrete Planters",
+    "specs": {
+      "material": "Fiber-reinforced premium concrete",
+      "dimensions": "9.5 cm (Diameter) x 9.5 cm (Height)",
+      "weight": "650g",
+      "drainage": "Yes, pre-drilled drainage hole",
+      "care": "Wipe with damp cloth. Do not scrub design.",
+      "finish": "Silk-matte protective sealer & anti-scratch felt bottom"
+    }
+  },
+  {
+    "id": "eco-krish",
+    "cat": "eco",
+    "badge": "Eco Jute",
+    "displayCat": "Eco Jute & Plastic",
+    "name": "Krish Planter",
+    "desc": "An elegant blend of woven natural jute fibers wrapped around a durable inner plastic pot. Affordable, lightweight, and modern.",
+    "img": "/images/krish.webp",
+    "featured": false,
+    "mrp": 330,
+    "price": 280,
+    "discountPercent": 15,
+    "collection": "Eco Jute & Plastic",
+    "specs": {
+      "material": "Natural Braided Jute & Premium Recycled Polymer",
+      "dimensions": "12 cm (Diameter) x 11.5 cm (Height)",
+      "weight": "180g",
+      "drainage": "Built-in drainage slits / Breathable outer jacket",
+      "care": "Keep jute dry; wipe inner pot with damp cloth",
+      "finish": "Organic textured braid with matte collar"
+    }
+  },
+  {
+    "id": "eco-jute-pot",
+    "cat": "eco",
+    "badge": "Eco Jute",
+    "displayCat": "Eco Jute & Plastic",
+    "name": "Signature Jute Pot",
+    "desc": "100% natural braided jute fibers woven into a rustic, breathable hanging or table pot. Brings warm organic textures into your calm space.",
+    "img": "/images/jute_pot.webp",
+    "featured": false,
+    "mrp": 163,
+    "price": 120,
+    "discountPercent": 26,
+    "collection": "Eco Jute & Plastic",
+    "specs": {
+      "material": "100% Natural Organic Jute Fiber",
+      "dimensions": "14 cm (Diameter) x 13 cm (Height)",
+      "weight": "140g",
+      "drainage": "Naturally breathable / porous design",
+      "care": "Spot clean only; keep away from continuous direct moisture",
+      "finish": "Raw braided rope texture"
+    }
+  },
+  {
+    "id": "eco-arty",
+    "cat": "eco",
+    "badge": "Eco Plastic",
+    "displayCat": "Eco Jute & Plastic",
+    "name": "Arty Planter",
+    "desc": "Lightweight, modern plastic planter with a premium matte finish.",
+    "img": "/images/arty.webp",
+    "featured": true,
+    "mrp": 379,
+    "price": 319,
+    "discountPercent": 16,
+    "collection": "Eco Jute & Plastic",
+    "specs": {
+      "material": "100% Recycled UV-Resistant Polymer",
+      "dimensions": "11.5 cm (Diameter) x 11 cm (Height)",
+      "weight": "90g",
+      "drainage": "Pre-drilled bottom drainage grid",
+      "care": "Washable with soap and water",
+      "finish": "Premium matte contemporary collar finish"
+    }
+  },
+  {
+    "id": "eco-ibiza",
+    "cat": "eco",
+    "badge": "Eco Plastic",
+    "displayCat": "Eco Jute & Plastic",
+    "name": "Ibiza Planter",
+    "desc": "Classic ribbed design with high durability and clean lines. Perfect for indoors and outdoors.",
+    "img": "/images/ibiza.webp",
+    "featured": false,
+    "mrp": 290,
+    "price": 239,
+    "discountPercent": 18,
+    "collection": "Eco Jute & Plastic",
+    "specs": {
+      "material": "100% Recycled UV-Resistant Polymer",
+      "dimensions": "11.5 cm (Diameter) x 11 cm (Height)",
+      "weight": "90g",
+      "drainage": "Pre-drilled bottom drainage grid",
+      "care": "Washable with soap and water",
+      "finish": "Premium matte contemporary collar finish"
+    }
+  },
+  {
+    "id": "eco-logos",
+    "cat": "eco",
+    "badge": "Eco Plastic",
+    "displayCat": "Eco Jute & Plastic",
+    "name": "Lagos Planter",
+    "desc": "Structured geometric details that blend durability with premium contemporary desk style.",
+    "img": "/images/logos.webp",
+    "featured": false,
+    "mrp": 399,
+    "price": 309,
+    "discountPercent": 23,
+    "collection": "Eco Jute & Plastic",
+    "specs": {
+      "material": "100% Recycled UV-Resistant Polymer",
+      "dimensions": "11.5 cm (Diameter) x 11 cm (Height)",
+      "weight": "90g",
+      "drainage": "Pre-drilled bottom drainage grid",
+      "care": "Washable with soap and water",
+      "finish": "Premium matte contemporary collar finish"
+    }
+  },
+  {
+    "id": "eco-jade",
+    "cat": "eco",
+    "badge": "Eco Plastic",
+    "displayCat": "Eco Jute & Plastic",
+    "name": "Jade Planter",
+    "desc": "Minimalist aesthetic with a smooth tactile feel, bringing elegance to your desktop.",
+    "img": "/images/jade.webp",
+    "featured": false,
+    "mrp": 299,
+    "price": 250,
+    "discountPercent": 16,
+    "collection": "Eco Jute & Plastic",
+    "specs": {
+      "material": "100% Recycled UV-Resistant Polymer",
+      "dimensions": "11.5 cm (Diameter) x 11 cm (Height)",
+      "weight": "90g",
+      "drainage": "Pre-drilled bottom drainage grid",
+      "care": "Washable with soap and water",
+      "finish": "Premium matte contemporary collar finish"
+    }
   }
 ]

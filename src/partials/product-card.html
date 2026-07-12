@@ -1,13 +1,20 @@
 <div class="product-card visible" data-cat="{{cat}}">
-  <div class="product-img">
+  <div class="product-img" style="cursor: pointer;" onclick="window.location.href='/product.html?id={{id}}';">
     <img src="{{img}}" alt="{{name}} planter" />
-    <span class="product-badge">{{badge}}</span>
+    <span class="product-badge badge-{{cat}}">{{badge}}</span>
   </div>
   <div class="product-info">
     <p class="product-cat">{{displayCat}}</p>
-    <p class="product-name">{{name}}</p>
-    <p class="product-price" style="font-size: 0.85rem; font-weight: 600; color: var(--ink); margin-bottom: 5px;">Price: ₹{{price}}/-</p>
+    <p class="product-name" style="cursor: pointer;" onclick="window.location.href='/product.html?id={{id}}';">{{name}}</p>
+    <div class="price-container" style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px; flex-wrap: wrap; margin-top: 4px;">
+      <span class="product-price" style="font-size: 0.95rem; font-weight: 600; color: var(--burgundy);">₹{{price}}/-</span>
+      <span class="product-mrp" style="font-size: 0.78rem; text-decoration: line-through; color: var(--muted); font-weight: 400;">₹{{mrp}}</span>
+      <span class="product-discount" style="font-size: 0.7rem; font-weight: 500; color: #2B4237; background: #E4EAE6; padding: 2px 6px; border-radius: 2px; letter-spacing: 0.02em;">{{discountPercent}}% OFF</span>
+    </div>
     <p class="product-desc">{{desc}}</p>
-    <a href="#" onclick="window.location.href='/checkout.html?product=' + encodeURIComponent('{{name}}') + '&img=' + encodeURIComponent('{{img}}') + '&price={{price}}'; return false;" class="btn-ghost" style="margin-top: 12px; width: 100%; justify-content: center; text-align: center; display: inline-flex;">BUY NOW</a>
+    <div style="display: flex; gap: 10px; margin-top: 14px;">
+      <button onclick="if(window.addToCart){ window.addToCart({id:'{{id}}', name:'{{name}}', price:{{price}}, img:'{{img}}', badge:'{{badge}}', cat:'{{cat}}', displayCat:'{{displayCat}}'}); if(window.openCartDrawer) window.openCartDrawer(); }" class="btn-ghost" style="flex: 1; padding: 10px 0; font-size: 0.72rem; justify-content: center; text-align: center; border: 1px solid var(--border);">+ BASKET</button>
+      <a href="/product.html?id={{id}}" class="btn-primary" style="flex: 1.2; padding: 10px 0; font-size: 0.72rem; justify-content: center; text-align: center; text-decoration: none; display: inline-flex;">VIEW DETAILS</a>
+    </div>
   </div>
 </div>

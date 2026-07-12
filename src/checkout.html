@@ -8,42 +8,54 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./css/style.css" />
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', 'YOUR_PIXEL_ID');
+  fbq('track', 'PageView');
+  </script>
+  <!-- End Meta Pixel Code -->
 </head>
 <body>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/></noscript>
 
 {{> nav }}
 
-<section class="checkout-section" style="padding-top: 160px; min-height: 100vh; background: var(--cream); display: flex; justify-content: center; align-items: flex-start;">
+<section class="checkout-section" style="padding-top: 160px; padding-bottom: 80px; min-height: 100vh; background: var(--cream); display: flex; justify-content: center; align-items: flex-start;">
   <div class="checkout-container reveal" style="background: var(--card-bg); padding: 48px; border-radius: 2px; width: 100%; max-width: 500px; border: 1px solid var(--border); box-shadow: 0 16px 40px rgba(26,25,22,0.06);">
-      <h2 class="section-title" style="font-size: 2.2rem; margin-bottom: 20px;">Complete Your <em>Order</em></h2>
+      <h2 class="section-title" style="font-size: 2.2rem; margin-bottom: 24px;">Complete Your <em>Order</em></h2>
       
-      <div style="display: flex; gap: 24px; align-items: center; margin-bottom: 28px; padding-bottom: 24px; border-bottom: 1px solid var(--border);">
-          <div style="width: 80px; height: 100px; background: rgba(44,43,40,0.04); border-radius: 2px; overflow: hidden; flex-shrink: 0; border: 1px solid var(--border);">
-              <img id="displayImage" src="" alt="Product Image" style="width: 100%; height: 100%; object-fit: cover; display: none;">
-          </div>
-          <div>
-              <p style="font-family: var(--font-body); font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px;">Selected Item</p>
-              <p style="font-family: var(--font-serif); font-size: 1.4rem; color: var(--ink); font-weight: 500; margin-bottom: 6px; line-height: 1.2;"><span id="displayProduct">Loading...</span></p>
-              <p style="font-family: var(--font-body); font-size: 1rem;"><strong>Total Price: ₹<span id="displayPrice" style="color: var(--burgundy);">749</span>/-</strong></p>
-          </div>
+      <!-- Dynamic Checkout Items List -->
+      <div id="checkoutItemsList" style="margin-bottom: 28px; padding-bottom: 24px; border-bottom: 1px solid var(--border); display: flex; flex-direction: column; gap: 16px;">
+          <!-- Items will be dynamically loaded here -->
       </div>
 
       <form id="addressForm">
           <div class="form-group" style="margin-bottom: 16px;">
-              <label class="form-label" for="custName" style="color: var(--charcoal);">Full Name</label>
+              <label class="form-label" for="custName" style="color: var(--charcoal); font-weight: 500;">Full Name</label>
               <input class="form-input" style="color: var(--ink); border-color: rgba(44,43,40,0.18); background: rgba(44,43,40,0.02);" type="text" id="custName" placeholder="Your Name" required>
           </div>
           <div class="form-group" style="margin-bottom: 24px;">
-              <label class="form-label" for="custAddress" style="color: var(--charcoal);">Delivery Address</label>
-              <textarea class="form-textarea" style="color: var(--ink); border-color: rgba(44,43,40,0.18); background: rgba(44,43,40,0.02); min-height: 70px;" id="custAddress" placeholder="Full Delivery Address (City & Pincode)" required></textarea>
+              <label class="form-label" for="custAddress" style="color: var(--charcoal); font-weight: 500;">Delivery Address</label>
+              <textarea class="form-textarea" style="color: var(--ink); border-color: rgba(44,43,40,0.18); background: rgba(44,43,40,0.02); min-height: 80px;" id="custAddress" placeholder="Full Delivery Address (City, Pincode & State)" required></textarea>
           </div>
-          <div style="display: flex; gap: 16px; margin-bottom: 32px;">
+          
+          <!-- Single Item Options (Hidden for Cart Checkout) -->
+          <div id="singleItemOptions" style="display: flex; gap: 16px; margin-bottom: 32px;">
               <div class="form-group" style="flex: 1;">
-                  <label class="form-label" for="orderQty" style="color: var(--charcoal);">Quantity</label>
+                  <label class="form-label" for="orderQty" style="color: var(--charcoal); font-weight: 500;">Quantity</label>
                   <input class="form-input" style="color: var(--ink); border-color: rgba(44,43,40,0.18); background: rgba(44,43,40,0.02);" type="number" id="orderQty" value="1" min="1" required>
               </div>
               <div class="form-group" style="flex: 2;">
-                  <label class="form-label" for="designType" style="color: var(--charcoal);">Design Type</label>
+                  <label class="form-label" for="designType" style="color: var(--charcoal); font-weight: 500;">Design Type</label>
                   <select class="form-input" style="color: var(--ink); border-color: rgba(44,43,40,0.18); background: rgba(44,43,40,0.02);" id="designType">
                       <option value="Anime">Anime</option>
                       <option value="Desi / Hindi">Desi / Hindi</option>
@@ -55,7 +67,7 @@
               </div>
           </div>
           
-          <button type="button" class="btn-primary" style="width: 100%; justify-content: center; padding: 16px;" onclick="sendOrder()">Confirm & Send Image via WhatsApp</button>
+          <button type="button" id="btnConfirmCheckout" class="btn-primary" style="width: 100%; justify-content: center; padding: 16px;" onclick="sendOrder()">Confirm & Send via WhatsApp</button>
       </form>
   </div>
 </section>
@@ -63,52 +75,193 @@
 {{> footer }}
 
 <script>
-    // Get product name and image from URL
     const urlParams = new URLSearchParams(window.location.search);
-    const productName = urlParams.get('product') || "ATOM Planter";
-    document.getElementById('displayProduct').innerText = productName;
+    const isSingleProduct = urlParams.has('product');
+    let orderTotal = 0;
+    let singleProductData = null;
+    let cartItems = [];
 
-    const productImg = urlParams.get('img');
-    if (productImg) {
-        const imgEl = document.getElementById('displayImage');
-        imgEl.src = productImg;
-        imgEl.style.display = 'block';
-    }
+    // Initialize checkout list
+    window.addEventListener('DOMContentLoaded', () => {
+        const listContainer = document.getElementById('checkoutItemsList');
+        
+        if (isSingleProduct) {
+            // Mode A: Single Product Checkout
+            const productName = urlParams.get('product');
+            const productImg = urlParams.get('img');
+            const productPrice = parseInt(urlParams.get('price')) || 749;
+            orderTotal = productPrice;
+            singleProductData = { name: productName, img: productImg, price: productPrice };
 
-    const productPrice = parseInt(urlParams.get('price')) || 749;
-    document.getElementById('displayPrice').innerText = productPrice;
+            listContainer.innerHTML = `
+                <div style="display: flex; gap: 20px; align-items: center;">
+                    <div style="width: 70px; height: 90px; background: rgba(44,43,40,0.04); border-radius: 2px; overflow: hidden; flex-shrink: 0; border: 1px solid var(--border);">
+                        <img src="${productImg || ''}" alt="${productName}" style="width: 100%; height: 100%; object-fit: cover; display: ${productImg ? 'block' : 'none'};">
+                    </div>
+                    <div>
+                        <p style="font-family: var(--font-body); font-size: 0.72rem; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); margin-bottom: 2px;">Selected Item</p>
+                        <p style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--ink); font-weight: 500; margin-bottom: 4px; line-height: 1.2;">${productName}</p>
+                        <p style="font-family: var(--font-body); font-size: 0.95rem; margin: 0;"><strong>Total Price: ₹<span id="displayPrice" style="color: var(--burgundy); font-weight: 600;">${productPrice}</span>/-</strong></p>
+                    </div>
+                </div>
+            `;
+            
+            // Listen to quantity changes for price update
+            const qtyInput = document.getElementById('orderQty');
+            qtyInput.addEventListener('input', () => {
+                const qty = Math.max(1, parseInt(qtyInput.value) || 1);
+                orderTotal = productPrice * qty;
+                document.getElementById('displayPrice').innerText = orderTotal;
+            });
+
+            // Track Meta InitiateCheckout Event
+            if (typeof fbq === 'function') {
+                fbq('track', 'InitiateCheckout', {
+                    content_name: productName,
+                    value: productPrice,
+                    currency: 'INR'
+                });
+            }
+
+        } else {
+            // Mode B: Cart Checkout
+            // Hide single-product specific input block
+            document.getElementById('singleItemOptions').style.display = 'none';
+            
+            // Load cart
+            cartItems = JSON.parse(localStorage.getItem('atom_cart')) || [];
+            
+            if (cartItems.length === 0) {
+                listContainer.innerHTML = `
+                    <div style="text-align: center; padding: 20px 0; color: var(--muted);">
+                        <p style="font-family: var(--font-serif); font-size: 1.2rem; font-style: italic; margin-bottom: 12px;">Your basket is empty.</p>
+                        <a href="/catalog-page.html" class="btn-primary" style="display: inline-flex; font-size: 0.75rem; text-decoration: none; padding: 8px 16px;">Go to Catalog</a>
+                    </div>
+                `;
+                document.getElementById('btnConfirmCheckout').disabled = true;
+                document.getElementById('btnConfirmCheckout').style.opacity = '0.5';
+                return;
+            }
+
+            // Render all items
+            let html = '';
+            let total = 0;
+            cartItems.forEach(item => {
+                total += item.price * item.qty;
+                html += `
+                    <div style="display: flex; gap: 16px; align-items: center; padding-bottom: 12px; border-bottom: 1px solid rgba(44,43,40,0.04);">
+                        <div style="width: 50px; height: 62px; background: rgba(44,43,40,0.02); border-radius: 2px; overflow: hidden; flex-shrink: 0; border: 1px solid var(--border);">
+                            <img src="${item.img}" alt="${item.name}" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div style="flex: 1; min-width: 0;">
+                            <h4 style="font-family: var(--font-serif); font-size: 1.1rem; font-weight: 500; color: var(--ink); margin: 0 0 2px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">${item.name}</h4>
+                            <p style="font-size: 0.8rem; color: var(--muted); margin: 0;">₹${item.price} × ${item.qty}</p>
+                        </div>
+                        <div style="font-size: 0.9rem; font-weight: 600; color: var(--burgundy);">₹${item.price * item.qty}/-</div>
+                    </div>
+                `;
+            });
+            
+            // Subtotal display
+            orderTotal = total;
+            html += `
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 8px;">
+                    <span style="font-size: 0.82rem; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); font-weight: 500;">Total Amount</span>
+                    <span style="font-size: 1.25rem; font-weight: 600; color: var(--burgundy);">₹${orderTotal}/-</span>
+                </div>
+            `;
+            listContainer.innerHTML = html;
+
+            // Track Meta InitiateCheckout Event for Cart
+            if (typeof fbq === 'function') {
+                fbq('track', 'InitiateCheckout', {
+                    content_ids: cartItems.map(item => item.id),
+                    value: orderTotal,
+                    currency: 'INR'
+                });
+            }
+        }
+    });
 
     function sendOrder() {
         const myNumber = "919021207129"; 
         const name = document.getElementById('custName').value.trim();
         const address = document.getElementById('custAddress').value.trim();
-        const qty = parseInt(document.getElementById('orderQty').value) || 1;
-        const designType = document.getElementById('designType').value;
 
         if(!name || !address) {
-            alert("Please fill in your name and address.");
+            alert("Please fill in your name and delivery address.");
             return;
         }
 
-        const total = productPrice * qty;
+        let message = '';
         
-        // Full Image URL for WhatsApp
-        const fullImgUrl = productImg ? (window.location.origin + productImg) : "No image link provided";
+        if (isSingleProduct) {
+            // Mode A: Single Product WhatsApp Message
+            const qty = parseInt(document.getElementById('orderQty').value) || 1;
+            const designType = document.getElementById('designType').value;
+            const total = singleProductData.price * qty;
+            const fullImgUrl = singleProductData.img ? (window.location.origin + singleProductData.img) : "No image link provided";
 
-        const message = "*NEW ORDER: ANTI-GRAVITY*\n\n" +
-                        "*Product:* " + productName + "\n" +
-                        "*Design Type:* " + designType + "\n" +
-                        "*Quantity:* " + qty + "\n" +
-                        "*Total Amount:* ₹" + total + "/-\n\n" +
-                        "*Delivery Address:*\n" +
-                        name + "\n" + address + "\n\n" +
-                        "*Product Image:* " + fullImgUrl;
+            // Track Meta Purchase Event before WhatsApp redirect
+            if (typeof fbq === 'function') {
+                fbq('track', 'Purchase', {
+                    content_name: singleProductData.name,
+                    content_category: designType,
+                    value: total,
+                    currency: 'INR',
+                    num_items: qty
+                });
+            }
+
+            message = "*NEW ORDER: ANTI-GRAVITY*\n\n" +
+                      "*Product:* " + singleProductData.name + "\n" +
+                      "*Design Type:* " + designType + "\n" +
+                      "*Quantity:* " + qty + "\n" +
+                      "*Total Amount:* ₹" + total + "/-\n\n" +
+                      "*Delivery Address:*\n" +
+                      name + "\n" + address + "\n\n" +
+                      "*Product Image:* " + fullImgUrl;
+        } else {
+            // Mode B: Cart WhatsApp Message
+            if (cartItems.length === 0) return;
+
+            // Track Meta Purchase Event for Basket
+            if (typeof fbq === 'function') {
+                fbq('track', 'Purchase', {
+                    content_ids: cartItems.map(item => item.id),
+                    value: orderTotal,
+                    currency: 'INR',
+                    num_items: cartItems.reduce((sum, item) => sum + item.qty, 0)
+                });
+            }
+
+            let itemsText = '';
+            cartItems.forEach(item => {
+                itemsText += `• ${item.qty} × ${item.name} (₹${item.price * item.qty})\n`;
+            });
+
+            message = "*NEW ORDER: ANTI-GRAVITY BASKET*\n\n" +
+                      "*Items Ordered:*\n" + itemsText + "\n" +
+                      "*Total Amount:* ₹" + orderTotal + "/-\n\n" +
+                      "*Delivery Address:*\n" +
+                      name + "\n" + address;
+            
+            // Clear cart locally after checkout submission
+            localStorage.removeItem('atom_cart');
+        }
 
         // Encoding for the URL
         const encodedMessage = encodeURIComponent(message);
         const whatsappURL = `https://wa.me/${myNumber}?text=${encodedMessage}`;
         
         window.open(whatsappURL, '_blank').focus();
+        
+        // Refresh page or redirect to index if cart was checked out to show empty state
+        if (!isSingleProduct) {
+            setTimeout(() => {
+                window.location.href = '/';
+            }, 1000);
+        }
     }
 </script>
 <script type="module" src="./js/main.js"></script>

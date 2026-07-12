@@ -1,3 +1,5 @@
+import './cart.js';
+
   /* SMOOTH SCROLL — uses scrollIntoView, no href hashes, no iframe issues */
   function goTo(id) {
     var el = document.getElementById(id);
@@ -12,9 +14,11 @@
 
   /* NAV SCROLL SHRINK */
   var nav = document.getElementById('mainNav');
-  window.addEventListener('scroll', function() {
-    nav.classList.toggle('scrolled', window.scrollY > 40);
-  }, { passive: true });
+  if (nav) {
+    window.addEventListener('scroll', function() {
+      nav.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
+  }
 
   /* REVEAL ON SCROLL */
   var reveals = document.querySelectorAll('.reveal');
@@ -40,18 +44,25 @@
   /* MOBILE NAV */
   function closeMobileNav() {
     var nl = document.getElementById('navLinks');
-    nl.classList.remove('mopen');
-    nl.removeAttribute('style');
-  }
-  document.getElementById('navToggle').addEventListener('click', function() {
-    var nl = document.getElementById('navLinks');
-    if (nl.classList.contains('mopen')) {
-      closeMobileNav();
-    } else {
-      nl.classList.add('mopen');
-      nl.style.cssText = 'display:flex;flex-direction:column;position:fixed;top:62px;left:0;right:0;background:rgba(237,232,223,0.98);padding:24px 32px;gap:20px;z-index:199;border-bottom:1px solid rgba(44,43,40,0.1);backdrop-filter:blur(14px);';
+    if (nl) {
+      nl.classList.remove('mopen');
+      nl.removeAttribute('style');
     }
-  });
+  }
+  var navToggle = document.getElementById('navToggle');
+  if (navToggle) {
+    navToggle.addEventListener('click', function() {
+      var nl = document.getElementById('navLinks');
+      if (nl) {
+        if (nl.classList.contains('mopen')) {
+          closeMobileNav();
+        } else {
+          nl.classList.add('mopen');
+          nl.style.cssText = 'display:flex;flex-direction:column;position:fixed;top:62px;left:0;right:0;background:rgba(249,246,240,0.98);padding:24px 32px;gap:20px;z-index:199;border-bottom:1px solid rgba(44,43,40,0.1);backdrop-filter:blur(14px);';
+        }
+      }
+    });
+  }
 
   /* WHATSAPP FORM */
   const sendToWhatsApp = () => {
@@ -97,3 +108,16 @@
     const whatsappURL = `https://wa.me/${myNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, '_blank').focus();
   };
+
+  /* SMOOTH HASH SCROLL ON LOAD */
+  window.addEventListener('DOMContentLoaded', () => {
+    if (window.location.hash) {
+      const targetId = window.location.hash.substring(1);
+      setTimeout(() => {
+        const el = document.getElementById(targetId);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 300);
+    }
+  });
