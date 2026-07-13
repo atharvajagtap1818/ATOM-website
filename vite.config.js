@@ -21,7 +21,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'src/index.html'),
-        catalog: resolve(__dirname, 'src/catalog-page.html'),
+        catalog: resolve(__dirname, 'src/catalog.html'),
         checkout: resolve(__dirname, 'src/checkout.html'),
         b2b: resolve(__dirname, 'src/b2b.html'),
         product: resolve(__dirname, 'src/product.html')
