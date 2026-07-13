@@ -66,7 +66,7 @@ class AtomCart {
 
   injectCartUI() {
     // 1. Inject Floating Indicator Button (if not checkout page)
-    if (window.location.pathname.includes('/checkout.html')) return;
+    if (window.location.pathname.includes('/checkout')) return;
 
     if (!document.getElementById('atomCartIndicator')) {
       const btn = document.createElement('button');
@@ -161,7 +161,7 @@ class AtomCart {
           alert('Your basket is empty. Please add items to continue.');
           return;
         }
-        window.location.href = '/checkout.html';
+        window.location.href = '/checkout';
       });
     }
   }

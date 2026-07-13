@@ -3,7 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ATOM — Planter Details</title>
+  
+  <!-- Primary SEO Metadata -->
+  <title>ATOM — Premium Handcrafted Planter Details</title>
+  <meta name="description" id="productMetaDesc" content="Shop premium designer planters from ATOM. Handcrafted eco-friendly pots designed to bring warm, earthy tones and personality to your calm space." />
+  <meta name="keywords" content="atom planter, designer pots, handcrafted pots, desktop planters, premium plant pots, home decor pune" />
+  <link rel="canonical" href="https://atombiotics.web.app/product" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://atombiotics.web.app/product" />
+  <meta property="og:title" id="ogProductTitle" content="ATOM — Handcrafted Planter Details" />
+  <meta property="og:description" id="ogProductDesc" content="Shop premium designer planters from ATOM. Handcrafted eco-friendly pots designed to bring warm, earthy tones and personality to your calm space." />
+  <meta property="og:image" id="ogProductImage" content="https://atombiotics.web.app/hero_new.webp" />
+  <meta property="og:site_name" content="ATOM" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://atombiotics.web.app/product" />
+  <meta name="twitter:title" id="twitterProductTitle" content="ATOM — Handcrafted Planter Details" />
+  <meta name="twitter:description" id="twitterProductDesc" content="Shop premium designer planters from ATOM. Handcrafted eco-friendly pots designed to bring warm, earthy tones and personality to your calm space." />
+  <meta name="twitter:image" id="twitterProductImage" content="https://atombiotics.web.app/hero_new.webp" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
@@ -147,7 +168,7 @@
     }
 
     // Fetch catalog database
-    fetch('./data/catalog.json')
+    fetch('/data/catalog.json')
       .then(res => res.json())
       .then(catalog => {
         const product = catalog.find(item => item.id === productId);
@@ -157,8 +178,25 @@
           return;
         }
 
-        // Meta Page Title update
-        document.title = `ATOM — ${product.name} Planter`;
+        // Dynamic SEO Metadata updates
+        const pageTitle = `ATOM — ${product.name} Premium Planter`;
+        document.title = pageTitle;
+
+        const dynamicDesc = `${product.name} Planter: ${product.desc} Handcrafted with premium ${product.specs.material}, size ${product.specs.dimensions}. Ideal for desktop & home decor.`;
+        const productFullImg = window.location.origin + product.img;
+
+        const updateMeta = (id, val) => {
+          const el = document.getElementById(id);
+          if (el) el.setAttribute('content', val);
+        };
+
+        updateMeta('productMetaDesc', dynamicDesc);
+        updateMeta('ogProductTitle', pageTitle);
+        updateMeta('ogProductDesc', dynamicDesc);
+        updateMeta('ogProductImage', productFullImg);
+        updateMeta('twitterProductTitle', pageTitle);
+        updateMeta('twitterProductDesc', dynamicDesc);
+        updateMeta('twitterProductImage', productFullImg);
 
         // Render Page Elements
         document.getElementById('breadcrumbProduct').innerText = product.name;
@@ -207,7 +245,7 @@
         document.getElementById('btnBuyNow').addEventListener('click', () => {
           if (window.addToCart) {
             window.addToCart(product);
-            window.location.href = '/checkout.html';
+            window.location.href = '/checkout';
           }
         });
 
