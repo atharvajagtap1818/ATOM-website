@@ -36,19 +36,45 @@
     <h2 class="section-title reveal d1">Browse Our <em>Full Catalog</em></h2>
     <div class="category-tabs reveal d2">
       <button class="tab-btn active" data-filter="all">All</button>
-      <button class="tab-btn" data-filter="anime">Anime</button>
-      <button class="tab-btn" data-filter="desi">Desi / Hindi</button>
-      <button class="tab-btn" data-filter="love">Love &amp; Aesthetic</button>
-      <button class="tab-btn" data-filter="popcult">Pop Culture</button>
-      <button class="tab-btn" data-filter="nature">Nature &amp; Art</button>
-      <button class="tab-btn" data-filter="eco">Eco Jute &amp; Plastic</button>
-      <button class="tab-btn" data-filter="custom">Custom</button>
+      <button class="tab-btn" data-filter="signature">Atom Signature</button>
+      <button class="tab-btn" data-filter="eco-jute">Eco Jute</button>
+      <button class="tab-btn" data-filter="eco-polymer">Neo-Polymer</button>
+    </div>
+    
+    <div class="subcategory-wrapper reveal d3" id="subcategoryWrapper">
+      <div class="subcategory-tabs">
+        <button class="sub-tab-btn active" data-subfilter="all-sig">All Signature</button>
+        <button class="sub-tab-btn" data-subfilter="anime">Anime</button>
+        <button class="sub-tab-btn" data-subfilter="desi">Desi / Hindi</button>
+        <button class="sub-tab-btn" data-subfilter="love">Love &amp; Aesthetic</button>
+        <button class="sub-tab-btn" data-subfilter="popcult">Pop Culture</button>
+        <button class="sub-tab-btn" data-subfilter="nature">Nature &amp; Art</button>
+        <button class="sub-tab-btn" data-subfilter="custom">Custom</button>
+      </div>
     </div>
   </div>
   <div class="products-grid" id="productsGrid">
     {{#each catalogProducts.full}}
       {{> product-card this}}
     {{/each}}
+    
+    <!-- Custom Design CTA Card -->
+    <div class="custom-enquiry-card" style="display: none; grid-column: 1 / -1; background: var(--sand-light); padding: 50px 40px; border-radius: 6px; text-align: center; flex-direction: column; justify-content: center; align-items: center; border: 1.5px dashed var(--border); width: 100%; min-height: 380px; box-sizing: border-box;">
+      <div style="max-width: 520px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 20px;">
+        <div class="corp-icon" style="width: 50px; height: 50px; background: var(--sage-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; border: none; margin-bottom: 8px;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--forest-green)" stroke-width="1.5" width="24" height="24"><path d="M12 20h9M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </div>
+        <h3 style="font-family: var(--font-serif); font-size: 1.8rem; font-weight: 500; color: var(--ink); margin: 0;">Bespoke &amp; Custom Gifting</h3>
+        <p style="font-size: 0.95rem; color: var(--muted); line-height: 1.6; margin: 0; font-weight: 300;">Have a specific quote, anime character, or custom design in mind? We paint and handcraft personalized planters tailored exactly to your requirements, perfect for gifting or decorating your unique space.</p>
+        <div style="display: flex; gap: 14px; margin-top: 10px; width: 100%; justify-content: center; flex-wrap: wrap;">
+          <a href="/#contact?enquiry=custom" onclick="if(window.opener) { window.close(); } else { window.location.href='/#contact?enquiry=custom'; }" class="btn-primary" style="text-decoration: none; padding: 12px 28px; font-size: 0.72rem; letter-spacing: 0.1em; display: inline-flex; align-items: center; justify-content: center;">Request Custom Design</a>
+          <a href="https://wa.me/919021207129?text=Hello%20Atombiotic!%20I'm%20interested%20in%20creating%20a%20custom%20designed%20planter%20for%20gifting." target="_blank" rel="noopener" class="btn-ghost" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; padding: 12px 28px; font-size: 0.72rem; letter-spacing: 0.1em; justify-content: center;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            WhatsApp Inquiry
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 

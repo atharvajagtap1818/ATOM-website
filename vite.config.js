@@ -1,4 +1,4 @@
-// Reloading Vite config for dynamic pricing & pruned catalog updates
+// Reloading Vite config for updated mineral compound, drainage, and custom orders templates
 import { defineConfig } from 'vite';
 import handlebars from 'vite-plugin-handlebars';
 import { resolve } from 'path';

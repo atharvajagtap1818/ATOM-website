@@ -30,14 +30,76 @@ import './cart.js';
   reveals.forEach(function(el) { io.observe(el); });
 
   /* CATALOG FILTER */
+  const subWrapper = document.getElementById('subcategoryWrapper');
+  
+  function applyFilters() {
+    const activeParentTab = document.querySelector('.tab-btn.active');
+    if (!activeParentTab) return;
+    
+    const parentFilter = activeParentTab.getAttribute('data-filter');
+    
+    if (parentFilter === 'signature') {
+      const activeSubTab = document.querySelector('.sub-tab-btn.active');
+      const subFilter = activeSubTab ? activeSubTab.getAttribute('data-subfilter') : 'all-sig';
+      
+      document.querySelectorAll('.product-card[data-cat]').forEach(function(c) {
+        const cat = c.getAttribute('data-cat');
+        const isSignature = (cat !== 'eco-jute' && cat !== 'eco-polymer');
+        
+        if (isSignature) {
+          c.classList.toggle('visible', subFilter === 'all-sig' || cat === subFilter);
+        } else {
+          c.classList.remove('visible');
+        }
+      });
+      
+      const customCard = document.querySelector('.custom-enquiry-card');
+      if (customCard) {
+        customCard.style.display = (subFilter === 'custom') ? 'flex' : 'none';
+      }
+    } else {
+      const customCard = document.querySelector('.custom-enquiry-card');
+      if (customCard) {
+        customCard.style.display = 'none';
+      }
+      
+      document.querySelectorAll('.product-card[data-cat]').forEach(function(c) {
+        const cat = c.getAttribute('data-cat');
+        if (parentFilter === 'all') {
+          c.classList.add('visible');
+        } else if (parentFilter === 'eco-jute') {
+          c.classList.toggle('visible', cat === 'eco-jute');
+        } else if (parentFilter === 'eco-polymer') {
+          c.classList.toggle('visible', cat === 'eco-polymer');
+        }
+      });
+    }
+  }
+
   document.querySelectorAll('.tab-btn').forEach(function(tab) {
     tab.addEventListener('click', function() {
       document.querySelectorAll('.tab-btn').forEach(function(t) { t.classList.remove('active'); });
       tab.classList.add('active');
-      var f = tab.getAttribute('data-filter');
-      document.querySelectorAll('.product-card[data-cat]').forEach(function(c) {
-        c.classList.toggle('visible', f === 'all' || c.getAttribute('data-cat') === f);
-      });
+      
+      const parentFilter = tab.getAttribute('data-filter');
+      if (parentFilter === 'signature') {
+        if (subWrapper) subWrapper.classList.add('open');
+        document.querySelectorAll('.sub-tab-btn').forEach(function(st) { st.classList.remove('active'); });
+        const defaultSubTab = document.querySelector('.sub-tab-btn[data-subfilter="all-sig"]');
+        if (defaultSubTab) defaultSubTab.classList.add('active');
+      } else {
+        if (subWrapper) subWrapper.classList.remove('open');
+      }
+      
+      applyFilters();
+    });
+  });
+
+  document.querySelectorAll('.sub-tab-btn').forEach(function(subTab) {
+    subTab.addEventListener('click', function() {
+      document.querySelectorAll('.sub-tab-btn').forEach(function(st) { st.classList.remove('active'); });
+      subTab.classList.add('active');
+      applyFilters();
     });
   });
 
@@ -108,15 +170,52 @@ import './cart.js';
     const whatsappURL = `https://wa.me/${myNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, '_blank').focus();
   };
+  
+  /* INITIATE CUSTOM ENQUIRY AND SCROLL TO CONTACT */
+  window.initiateCustomEnquiry = () => {
+    const typeSelect = document.getElementById('enquiryType');
+    if (typeSelect) {
+      typeSelect.value = 'custom';
+    }
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    const messageInput = document.getElementById('userMessage');
+    if (messageInput) {
+      setTimeout(() => {
+        messageInput.focus();
+      }, 800);
+    }
+  };
 
   /* SMOOTH HASH SCROLL ON LOAD */
   window.addEventListener('DOMContentLoaded', () => {
-    if (window.location.hash) {
-      const targetId = window.location.hash.substring(1);
+    const hash = window.location.hash;
+    if (hash) {
+      const parts = hash.substring(1).split('?');
+      const targetId = parts[0];
+      const params = parts[1] ? new URLSearchParams(parts[1]) : null;
+
+      if (params && params.get('enquiry') === 'custom') {
+        const typeSelect = document.getElementById('enquiryType');
+        if (typeSelect) {
+          typeSelect.value = 'custom';
+        }
+      }
+
       setTimeout(() => {
         const el = document.getElementById(targetId);
         if (el) {
           el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        if (params && params.get('enquiry') === 'custom') {
+          const messageInput = document.getElementById('userMessage');
+          if (messageInput) {
+            setTimeout(() => {
+              messageInput.focus();
+            }, 800);
+          }
         }
       }, 300);
     }
