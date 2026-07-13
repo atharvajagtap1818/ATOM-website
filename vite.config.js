@@ -1,4 +1,4 @@
-// Reloading Vite config for updated mineral compound, drainage, and custom orders templates
+// Reloading Vite config for updated mineral compound, drainage, custom orders, and new favicon config
 import { defineConfig } from 'vite';
 import handlebars from 'vite-plugin-handlebars';
 import { resolve } from 'path';
